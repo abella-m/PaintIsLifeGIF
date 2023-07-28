@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 300px;
+    height: 420px;
+    background-color: white;
+    margin-top: 100px;
+    border-radius: 2rem;
+    box-shadow: 5px 10px 8px #888888;
+}
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.firstset span{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 45px;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.topword1{
+    animation: slideup1 1s 2000ms;
+}
+
+.middleword1{
+
+    animation: stay 1s 2000ms, colorchange 1s 2000ms;
+  
+}
+.bottomword1{
+    animation: slidedown1 1s 2000ms;
+}
+
+.secondset span{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 2rem;
+    margin-top: 60px;
+    margin-left: 100px;
+    font-size: 30px;
+    opacity: 0;
+    font-weight: bold;
+}
+.topword2{
+    animation: slideup 1s;
+ 
+}
+.middleword2{
+    animation: stay 1s, colorchange 1s 1000ms;
+}
+.bottomword2{
+    animation: slidedown 1s;
+    
+}
+.thirdset span{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+  
+    position: relative;
+    margin-top: 12px;
+    opacity: 0;
+    font-weight: bold; 
+}
+.topword3{
+    animation: wordpop 1s;
+    animation-delay: 1s;
+    transform: translate(-1%,52%);
+}
+.bottomword3{
+    animation: wordpop 1s;
+    animation-delay: 1s;
+    transform: translate(-2%,41%);
+}
+.words{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: smaller;
+}
+.words span{
+    margin-top: -10px;
+    margin-bottom: -5px;
+}
+.word5{
+    font-weight: bold;
+}
+.promo1{
+    margin-top: 30px;
+    text-align: right;
+    transform: translateX(-60%);
+    font-size: larger;
+}
+.ten{
+    transform: translate(40%, -85%);
+    font-size: 30px;
+}
+.promo{
+    margin-left: 20px;
+}
+.percent{
+    transform: translate(62%, -278%);
+}
+.percentage{
+    font-weight: bold;
+}
+.promo4{
+    font-size: large;
+}
+
+.box{
+    width: 150px;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(43, 42, 42);
+    font-size: x-small;
+    margin-left: 25%;
+    margin-top: -10%;
+    align-items: center;
+    transform: translateY(-200%);
+}
+.text1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 7px;
+    transform: translate(-30%, 25% );
+}
+.text2{
+    transform: translate(40%, -75%);
+    font-size: 20px;
+    display: flex;
+}
+.text3{
+    transform: translate(50%, -275%);
+    display: flex;
+
+}
+
+@keyframes slideup{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(7%);
+    }
+}
+@keyframes stay{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+       
+    }
+}
+@keyframes slidedown{
+    0%{
+    opacity: 0;
+}
+    100%{
+    opacity: 1;
+    transform: translateY(-7%);
+}}
+
+@keyframes wordpop {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+@keyframes colorchange{
+    0%{
+        opacity: 1;
+        color: aqua;
+    }
+    100%{
+        opacity: 1;
+        color: aqua;
+    }
+
+}
+@keyframes slideup1{
+    0%{
+        opacity: 0;
+        letter-spacing: -1px;
+    }
+    100%{
+        opacity: 1;
+       letter-spacing: 2px;
+        transform: translate(-3%, 7%);
+    }
+}
+@keyframes slidedown1{
+    0%{
+    opacity: 0;
+    letter-spacing: -1px;
+  
+}
+    100%{
+    opacity: 1;
+    letter-spacing: 2px;
+    transform: translate(-3%,-7%);
+}}
+@keyframes bg {
+    0%{
+        background-color: black;
+    }
+}
